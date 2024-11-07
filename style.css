@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #ece6e6;
+    background-color:;
+}
+
+h1 {
+    text-align: center; /* Memusatkan judul */
+    margin-bottom: 20px; /* Menambahkan jarak antara judul dan kontainer */
+    font-size: 28px;
+    font-style: bold ;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Mengizinkan item untuk dibungkus ke baris baru */
+    justify-content: center; /* Menyelaraskan item di tengah */
+    max-width: 800px; /* Maksimum lebar kontainer 800px */
+    margin: 0 auto; /* Mengatur margin otomatis untuk pusat kontainer */
+}
+
+.product {  
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Sudut membulat */
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    flex: 1 1 calc(33.333% - 20px);
+    max-width: 250px;
+    box-sizing: border-box;
+    background-color: #fff; /* Latar belakang putih untuk produk */
+    transition: transform 0.2s; /* Efek transisi */
+    color: #000000;
+}
+.product:hover {
+    transform: scale(1.05); /* Zoom saat hover */
+}
+
+.modal-content {
+    border-radius: 10px; /* Sudut membulat untuk modal */
+}
+
+.product img {
+    width: 200px;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+/* Media query untuk layar kecil */
+@media (max-width: 768px) { 
+    .product {
+        flex: 1 1 100%; /* 1 kolom pada layar kecil */
+    }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #000000;
+    width: 80%;
+}
+
+.close {
+    color: #000000;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+td, th{
+    color: black;
+}
+.img{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+}
+
