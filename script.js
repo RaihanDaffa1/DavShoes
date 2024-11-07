@@ -59,6 +59,6 @@ function wa(){
 
 
 function login() {
-    window.location.href = 'index.html';
+    window.location.href = 'produk.html';
 }
 }
