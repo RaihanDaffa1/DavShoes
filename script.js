@@ -56,9 +56,7 @@ function wa(){
     const url =`https://wa.me/6285694917839?text${Message}`;
 
     window.open(url, '_blank');
-
-
+}
 function login() {
     window.location.href = 'produk.html';
-}
 }
