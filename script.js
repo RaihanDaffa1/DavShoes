@@ -53,7 +53,7 @@ function fadeIn(element) {
 }
 function wa(){
     const Message = `Saya ingin beli sepatu merah dengan harga ` 
-    const url =`https://wa.me/6285694917839?text${Message}`;
+    const url =`https://wa.me/6285694917839?text$={Message}`;
 
     window.open(url, '_blank');
 }
